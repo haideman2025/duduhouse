@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DUDU House Brand Story</title>
+<meta name="description" content="Câu chuyện thương hiệu DUDU HOUSE: ba nghĩa của cái tên, logo ngôi nhà đu đủ, video câu chuyện và bộ ra mắt nội bộ.">
+<meta property="og:title" content="DUDU House Brand Story">
+<meta property="og:description" content="Câu chuyện thương hiệu DUDU HOUSE: ba nghĩa của cái tên, logo ngôi nhà đu đủ, video câu chuyện và bộ ra mắt nội bộ.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><div class="topbar"><div class="wrap topbar-in"><a class="mark" href="index.html">DUDU<span>HOUSE</span></a><div class="pages"><a href="index.html">Tổng quan</a><a href="soulprint.html">Soulprint</a><a href="cau-chuyen.html" aria-current="page">Câu chuyện</a><a href="chien-luoc.html">Chiến lược</a><a href="viral-grid.html">Viral Grid</a></div></div></div><style>
+/* Trang Câu chuyện: màu thương hiệu cố định cho logo (không đổi theo theme), phần chữ vẫn theo token chung */
+:root{--skin:#2E7A5E;--flesh:#F08A5D;--seed:#1F2A26;--cream:#FFF4EA;--cavity:#FBC9A8}
+.chapter{max-width:820px}
+.meanings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;max-width:none}
+.meaning{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:6px;align-content:start}
+.meaning .k{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--peach)}
+.meaning b{font-family:var(--display);font-size:20px}
+.meaning p{margin:0;font-size:15px;color:var(--muted)}
+.logos{display:grid;gap:18px;max-width:none}
+.logo-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.logo-card.rec{border:2px solid var(--peach)}
+.stage{background:var(--cream);display:grid;place-items:center;padding:28px;min-height:280px}
+.stage svg{width:100%;max-width:320px;height:auto}
+.logo-info{padding:20px;display:grid;gap:10px;align-content:start}
+.logo-info h3{margin:0;font-size:22px}
+.logo-info p{margin:0;font-size:15px}
+.badge{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--peach-soft);color:var(--peach);padding:4px 10px;border-radius:999px}
+.variants{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.variants div{width:64px;height:64px;border-radius:14px;display:grid;place-items:center;border:1px solid var(--line)}
+.variants svg{width:44px;height:44px}
+.v-dark{background:var(--seed)}.v-light{background:#fff}.v-flesh{background:var(--flesh)}.v-skin{background:var(--skin)}
+.variants small{display:block;font-size:11px;color:var(--muted);text-align:center;margin-top:4px}
+.variants figure{margin:0}
+@media (max-width:720px){.logo-card{grid-template-columns:1fr}.stage{min-height:220px}}
+.palette{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;max-width:none}
+.palette div{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.palette i{display:block;height:70px}
+.palette p{margin:0;padding:8px 10px;font-size:13px}
+.palette b{display:block;font-size:14px}
+
+/* VSL player */
+.player{background:var(--seed);color:var(--cream);border-radius:20px;overflow:hidden;max-width:none;position:relative}
+.screen{aspect-ratio:16/9;max-height:70vh;width:100%;display:grid;align-content:center;justify-items:center;text-align:center;padding:24px 22px;gap:14px;position:relative;isolation:isolate}
+.screen::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.18;background-image:radial-gradient(circle,var(--flesh) 2px,transparent 2.5px);background-size:26px 26px}
+.screen .scene-no{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--flesh);font-weight:700}
+.screen .vo{font-family:var(--display);font-weight:700;font-size:clamp(20px,3.6vw,38px);line-height:1.2;max-width:24ch;text-wrap:balance;margin:0}
+.screen .visual{font-size:clamp(12.5px,1.5vw,15px);opacity:.75;max-width:52ch;margin:0}
+.screen .ovl{font-size:13px;font-weight:700;letter-spacing:.04em;background:var(--flesh);color:var(--seed);padding:5px 12px;border-radius:999px}
+@media (prefers-reduced-motion:no-preference){.screen.anim .vo,.screen.anim .visual,.screen.anim .ovl{animation:rise .7s ease both}.screen.anim .visual{animation-delay:.15s}.screen.anim .ovl{animation-delay:.3s}}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.controls{display:flex;align-items:center;gap:12px;padding:12px 16px;background:color-mix(in srgb,var(--seed) 85%,#000)}
+.controls{flex-wrap:wrap}
+.controls button{white-space:nowrap;background:var(--flesh);color:var(--seed);border:0;border-radius:999px;padding:8px 16px;font:inherit;font-weight:700;cursor:pointer}
+.controls button.ghost{background:transparent;color:var(--cream);border:1px solid color-mix(in srgb,var(--cream) 35%,transparent)}
+.progress{flex:1;height:6px;border-radius:9px;background:color-mix(in srgb,var(--cream) 18%,transparent);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--flesh)}
+.time{font-variant-numeric:tabular-nums;font-size:13px;opacity:.8;white-space:nowrap}
+@media (max-width:560px){.screen{aspect-ratio:4/5}.progress{order:3;flex-basis:100%}}
+.letter{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,36px);font-size:17px;line-height:1.75}
+.letter p{max-width:62ch}
+.letter .sign{font-family:var(--display);font-weight:700;margin-top:18px}
+</style>
+
+<header class="hero wrap">
+<p class="eyebrow">Câu chuyện thương hiệu · Logo · VSL · Bộ nội bộ</p>
+<h1>Ngôi nhà<br>có rất nhiều hạt</h1>
+<p class="lead">Một cái tên mang ba nghĩa. Một quả đu đủ bổ đôi. Một câu chuyện để đội ngũ DUDU nghe trước tiên.</p>
+</header>
+
+<nav class="toc" aria-label="Mục lục"><div class="wrap toc-in">
+<a href="#ten">01 · Ba nghĩa của cái tên</a><a href="#logo">02 · Phương án logo</a><a href="#vsl">03 · Video câu chuyện</a><a href="#kich-ban">04 · Kịch bản VSL</a><a href="#thu">05 · Thư gửi đội ngũ</a><a href="#noi-bo">06 · Ra mắt nội bộ</a>
+</div></nav>
+
+<main class="wrap doc">
+
+<section id="ten" class="sec chapter">
+<h2><span class="num">01</span>Ba nghĩa của cái tên</h2>
+<p>Cái tên DUDU HOUSE đã tự chứa đủ câu chuyện tái định vị. Ba lớp nghĩa xếp chồng lên nhau, từ người làm ra thương hiệu đến người dùng nó mỗi ngày.</p>
+<div class="meanings">
+ <div class="meaning"><span class="k">Lớp 1 · Người</span><b>Tên của founder</b><p>DUDU bắt nguồn từ chính tên chị Dung. Thương hiệu mang tên người, nên mỗi lời hứa là lời của một người thật đứng sau.</p></div>
+ <div class="meaning"><span class="k">Lớp 2 · Lời hứa</span><b>Ngôi nhà đủ đầy</b><p>“Khách đến là đủ”: đủ lựa chọn để thử, đủ kiến thức để hiểu, đủ người để hỏi. Không thiếu một thứ gì để bắt đầu chăm da.</p></div>
+ <div class="meaning"><span class="k">Lớp 3 · Khách hàng</span><b>Đu Đủ House</b><p>Cái tên khách tự gọi. Quả đu đủ gần gũi với mọi nhà Việt, và bên trong có rất nhiều hạt nhỏ — đúng như kho bản thử của DUDU.</p></div>
+</div>
+<blockquote><p>Bổ đôi một quả đu đủ, bạn thấy hàng trăm hạt nhỏ nằm trong lòng một ngôi nhà ấm. Đó chính là Phòng thử của làn da: hơn một nghìn bản thử nhỏ, gói trong sự chăm sóc của một người chị.</p></blockquote>
+<p>Lớp nghĩa thứ ba quan trọng nhất cho tái định vị: khách hàng đã tự đặt cho DUDU một cái tên thân thương. Thương hiệu chỉ cần nhận lấy và kể tiếp. Thêm một điểm trùng hợp đáng dùng: bảng màu đã chọn cho Visual DNA (xanh mint và hồng đào) chính là màu vỏ và màu ruột quả đu đủ.</p>
+<p style="color:var(--muted);font-size:14.5px">Cần chị Dung xác nhận: cách viết tắt chính xác của “DUDU” từ tên chị, để đưa đúng vào câu chuyện.</p>
+</section>
+
+<section id="logo" class="sec chapter" style="max-width:none">
+<h2><span class="num">02</span>Ba phương án logo</h2>
+<p style="max-width:68ch">Cả ba phương án cùng dùng một hệ màu lấy từ quả đu đủ. Phương án A gom được cả ba lớp nghĩa nên được đề xuất làm logo chính; B và C có thể làm dấu phụ (icon, tem niêm phong).</p>
+
+<div class="palette">
+ <div><i style="background:#2E7A5E"></i><p><b>Xanh vỏ đu đủ</b>#2E7A5E · chữ, viền, nền tối</p></div>
+ <div><i style="background:#F08A5D"></i><p><b>Cam ruột đu đủ</b>#F08A5D · điểm nhấn, CTA</p></div>
+ <div><i style="background:#FBC9A8"></i><p><b>Lòng quả</b>#FBC9A8 · nền thẻ, hộp</p></div>
+ <div><i style="background:#1F2A26"></i><p><b>Hạt</b>#1F2A26 · chữ chính, chấm hạt</p></div>
+ <div><i style="background:#FFF4EA;border-bottom:1px solid var(--line)"></i><p><b>Kem</b>#FFF4EA · nền bao bì</p></div>
+</div>
+
+<div class="logos">
+ <article class="logo-card rec">
+  <div class="stage">
+   <svg viewBox="0 0 360 200" role="img" aria-label="Logo phương án A: quả đu đủ bổ đôi hình ngôi nhà">
+    <g transform="translate(20 22)">
+     <path d="M60 0 L112 46 C118 52 120 60 120 70 L120 112 C120 140 96 158 60 158 C24 158 0 140 0 112 L0 70 C0 60 2 52 8 46 Z" fill="#2E7A5E"/>
+     <path d="M60 12 L104 51 C108 55 110 61 110 68 L110 110 C110 134 89 148 60 148 C31 148 10 134 10 110 L10 68 C10 61 12 55 16 51 Z" fill="#F08A5D"/>
+     <ellipse cx="60" cy="102" rx="26" ry="34" fill="#FBC9A8"/>
+     <g fill="#1F2A26"><circle cx="60" cy="78" r="4"/><circle cx="49" cy="88" r="4"/><circle cx="71" cy="88" r="4"/><circle cx="60" cy="98" r="4"/><circle cx="46" cy="104" r="4"/><circle cx="74" cy="104" r="4"/><circle cx="53" cy="116" r="4"/><circle cx="67" cy="116" r="4"/><circle cx="60" cy="128" r="4"/></g>
+    </g>
+    <text x="164" y="104" font-family="Bricolage Grotesque, Be Vietnam Pro, sans-serif" font-weight="800" font-size="56" fill="#1F2A26" letter-spacing="1">DUDU</text>
+    <text x="167" y="134" font-family="Be Vietnam Pro, sans-serif" font-weight="600" font-size="17" fill="#2E7A5E" letter-spacing="9">HOUSE</text>
+    <text x="167" y="158" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" fill="#1F2A26" opacity=".7" letter-spacing="1">Phòng thử của làn da</text>
+   </svg>
+  </div>
+  <div class="logo-info">
+   <span class="badge">Đề xuất · logo chính</span>
+   <h3>A — Ngôi nhà đu đủ</h3>
+   <p>Nửa quả đu đủ bổ dọc, phần đầu vát thành mái nhà. Vỏ xanh là ngôi nhà, ruột cam là sự ấm áp, 9 hạt trong lòng là những bản thử nhỏ.</p>
+   <p><b>Gói đủ 3 nghĩa:</b> chữ DUDU (founder) · hình ngôi nhà (nhà đủ đầy) · quả đu đủ nhiều hạt (cái tên khách gọi).</p>
+   <p><b>Vì sao hợp tái định vị:</b> nhận ra ngay ở cỡ icon sàn TMĐT 48px; không dùng chữ “chiết”; dễ in lên khay thử, hộp, Hộ chiếu làn da.</p>
+   <div class="variants" aria-label="Biến thể">
+    <figure><div class="v-light"><svg viewBox="0 0 120 158"><path d="M60 0 L112 46 C118 52 120 60 120 70 L120 112 C120 140 96 158 60 158 C24 158 0 140 0 112 L0 70 C0 60 2 52 8 46 Z" fill="#2E7A5E"/><path d="M60 12 L104 51 C108 55 110 61 110 68 L110 110 C110 134 89 148 60 148 C31 148 10 134 10 110 L10 68 C10 61 12 55 16 51 Z" fill="#F08A5D"/><ellipse cx="60" cy="102" rx="26" ry="34" fill="#FBC9A8"/><g fill="#1F2A26"><circle cx="60" cy="80" r="6"/><circle cx="48" cy="98" r="6"/><circle cx="72" cy="98" r="6"/><circle cx="60" cy="116" r="6"/></g></svg></div><small>Icon sàn</small></figure>
+    <figure><div class="v-dark"><svg viewBox="0 0 120 158"><path d="M60 0 L112 46 C118 52 120 60 120 70 L120 112 C120 140 96 158 60 158 C24 158 0 140 0 112 L0 70 C0 60 2 52 8 46 Z" fill="#F08A5D"/><ellipse cx="60" cy="102" rx="26" ry="34" fill="#FFF4EA"/><g fill="#1F2A26"><circle cx="60" cy="80" r="6"/><circle cx="48" cy="98" r="6"/><circle cx="72" cy="98" r="6"/><circle cx="60" cy="116" r="6"/></g></svg></div><small>Nền tối</small></figure>
+    <figure><div class="v-skin"><svg viewBox="0 0 120 158"><path d="M60 0 L112 46 C118 52 120 60 120 70 L120 112 C120 140 96 158 60 158 C24 158 0 140 0 112 L0 70 C0 60 2 52 8 46 Z" fill="none" stroke="#FFF4EA" stroke-width="9"/><g fill="#FFF4EA"><circle cx="60" cy="80" r="7"/><circle cx="48" cy="100" r="7"/><circle cx="72" cy="100" r="7"/><circle cx="60" cy="120" r="7"/></g></svg></div><small>1 màu</small></figure>
+   </div>
+  </div>
+ </article>
+
+ <article class="logo-card">
+  <div class="stage">
+   <svg viewBox="0 0 360 200" role="img" aria-label="Logo phương án B: hai chữ D tạo thành ngôi nhà">
+    <g transform="translate(24 30)">
+     <path d="M70 0 L140 52 L128 52 L70 10 L12 52 L0 52 Z" fill="#2E7A5E"/>
+     <path d="M66 58 L66 140 L40 140 C16 140 6 122 6 99 C6 76 16 58 40 58 Z" fill="#2E7A5E"/>
+     <path d="M74 58 L74 140 L100 140 C124 140 134 122 134 99 C134 76 124 58 100 58 Z" fill="#F08A5D"/>
+     <circle cx="70" cy="40" r="7" fill="#1F2A26"/>
+    </g>
+    <text x="182" y="108" font-family="Bricolage Grotesque, Be Vietnam Pro, sans-serif" font-weight="800" font-size="52" fill="#1F2A26">DUDU</text>
+    <text x="184" y="138" font-family="Be Vietnam Pro, sans-serif" font-weight="600" font-size="16" fill="#2E7A5E" letter-spacing="9">HOUSE</text>
+   </svg>
+  </div>
+  <div class="logo-info">
+   <span class="badge" style="background:var(--mint-soft);color:var(--mint)">Phương án B</span>
+   <h3>B — Hai chữ D thành ngôi nhà</h3>
+   <p>Hai chữ D đặt lưng vào nhau thành hai cánh cửa, phía trên là mái nhà. Một D màu vỏ, một D màu ruột đu đủ; hạt nhỏ trên mái là “cửa sổ”.</p>
+   <p><b>Mạnh ở:</b> lớp nghĩa founder và ngôi nhà, rất rõ ở dạng monogram.</p>
+   <p><b>Yếu ở:</b> hình đu đủ chỉ gợi qua màu, khách khó nhận ra cái tên Đu Đủ House.</p>
+  </div>
+ </article>
+
+ <article class="logo-card">
+  <div class="stage">
+   <svg viewBox="0 0 220 220" role="img" aria-label="Logo phương án C: tem nhãn phòng thử hình tròn">
+    <defs><path id="ring" d="M110 110 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+    <circle cx="110" cy="110" r="102" fill="#2E7A5E"/>
+    <circle cx="110" cy="110" r="94" fill="none" stroke="#FFF4EA" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <text font-family="Be Vietnam Pro, sans-serif" font-weight="700" font-size="14.5" fill="#FFF4EA" letter-spacing="3.2"><textPath href="#ring">DUDU HOUSE · PHÒNG THỬ CỦA LÀN DA ·</textPath></text>
+    <circle cx="110" cy="110" r="52" fill="#F08A5D"/>
+    <ellipse cx="110" cy="114" rx="26" ry="30" fill="#FBC9A8"/>
+    <g fill="#1F2A26"><circle cx="110" cy="96" r="5"/><circle cx="98" cy="110" r="5"/><circle cx="122" cy="110" r="5"/><circle cx="104" cy="126" r="5"/><circle cx="116" cy="126" r="5"/></g>
+   </svg>
+  </div>
+  <div class="logo-info">
+   <span class="badge" style="background:var(--mint-soft);color:var(--mint)">Phương án C</span>
+   <h3>C — Tem phòng thử</h3>
+   <p>Lát đu đủ cắt ngang nằm giữa một con tem tròn kiểu nhãn phòng lab. 5 hạt = 5 ô của khay thử.</p>
+   <p><b>Mạnh ở:</b> rất hợp làm tem niêm phong bản thử, sticker hộp, dấu “DUDU đã thử” trong video.</p>
+   <p><b>Yếu ở:</b> chữ vòng tròn khó đọc ở cỡ nhỏ; nên là dấu phụ, không làm logo chính.</p>
+  </div>
+ </article>
+</div>
+<p style="max-width:68ch">Đề xuất hệ nhận diện: <b>A làm logo chính</b>, <b>C làm tem “DUDU đã thử”</b> dán lên mọi bản thử và xuất hiện cuối mỗi video thử nghiệm. Bản trên đây là phác thảo hướng đi để chị Dung chọn; bản cuối cần designer vẽ lại chuẩn (vector, khoảng cách, chữ riêng).</p>
+</section>
+
+<section id="vsl" class="sec chapter" style="max-width:none">
+<h2><span class="num">03</span>Xem câu chuyện như một video</h2>
+<p style="max-width:68ch">Bản trình chiếu chạy theo đúng nhịp kịch bản (~105 giây). Bấm Phát để xem lời dẫn và hình ảnh từng cảnh. Có hai cái kết: bản cho khách hàng và bản cho đội ngũ.</p>
+<div class="player" id="player">
+ <div class="screen" id="screen" aria-live="polite"></div>
+ <div class="controls">
+  <button id="play" type="button">Phát</button>
+  <button id="ending" type="button" class="ghost">Đổi kết: đội ngũ</button>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+  <span class="time" id="time">0:00</span>
+ </div>
+</div>
+</section>
+
+<section id="kich-ban" class="sec chapter" style="max-width:none">
+<h2><span class="num">04</span>Kịch bản VSL “Ngôi nhà có rất nhiều hạt”</h2>
+<p style="max-width:68ch">Video dọc 9:16, 100–110 giây, giọng đọc nữ ấm (giọng người chị), nhạc nền không lời nhẹ, tiếng “tách” mở nắp bản thử là âm thanh nhận diện. Cấu trúc: nỗi lo → người dẫn đường → cái tên → ẩn dụ đu đủ → phòng thử → đồng hành → chuyển hoá → lời hứa.</p>
+<div class="tablewrap"><table id="scriptTable"><thead><tr><th>Giây</th><th>Hình ảnh</th><th>Lời dẫn (VO)</th><th>Chữ trên màn hình</th></tr></thead><tbody></tbody></table></div>
+<p style="max-width:68ch;color:var(--muted);font-size:14.5px">Lưu ý sản xuất: không nói công dụng điều trị; không dùng chữ “chiết” trong lời dẫn; hình khách hàng chỉ dùng khi có đồng ý bằng văn bản. Chi tiết trong [ngoặc vuông] cần chị Dung điền bằng kỷ niệm thật.</p>
+</section>
+
+<section id="thu" class="sec chapter">
+<h2><span class="num">05</span>Thư gửi đội ngũ</h2>
+<p>Bản kể liền mạch bằng giọng chị Dung, để đọc trong buổi ra mắt nội bộ hoặc gửi vào nhóm chung của công ty. Đội ngũ là những người đầu tiên phải tin câu chuyện này.</p>
+<div class="letter">
+<p>Gửi cả nhà DUDU,</p>
+<p>Chị muốn kể cho mọi người nghe về cái tên của chúng ta.</p>
+<p>DUDU bắt đầu từ tên của chị. Hồi mới bán những đơn hàng xách tay đầu tiên, chị chỉ nghĩ đơn giản: hàng phải thật, giá phải để ai cũng mua được. [Một kỷ niệm thật về đơn hàng đầu tiên.]</p>
+<p>Rồi có những ngày chị ngồi đến khuya đọc bảng thành phần, tự bôi từng món mới lên tay, lên mặt. Mười năm, tuần nào cũng vậy. Chị nhận ra các bạn trẻ không thiếu tiền để chăm da. Các bạn thiếu một chỗ để thử mà không sợ mất tiền, và thiếu một người để hỏi.</p>
+<p>Vì thế mình làm bản thử nhỏ. Vì thế Minh, Ngọc và mọi người xem từng ảnh nền da, hỏi từng bạn đang dùng gì, khuyên bỏ bớt chứ không khuyên mua thêm.</p>
+<p>Khách gọi mình là Đu Đủ House. Lúc đầu chị nghe thấy vui. Sau này chị thấy nó đúng lạ lùng. Bổ đôi quả đu đủ ra, bên trong có rất nhiều hạt. Mỗi hạt là một bản thử, một câu hỏi, một bạn khách đang bắt đầu. Còn cái vỏ bao quanh là ngôi nhà, là chúng ta.</p>
+<p>Từ hôm nay, DUDU HOUSE sẽ nói với khách một điều: đây là <b>phòng thử của làn da</b>. Ở đây không ai phải mua cả chai để biết có hợp, và không ai phải chăm da một mình.</p>
+<p>Lời hứa ấy không nằm trên banner. Nó nằm trong tin nhắn mọi người trả lời lúc 10 giờ tối, trong từng bản thử được dán nhãn đúng hạn, trong lần mình dám nói với khách “bạn không cần mua thêm đâu”.</p>
+<p>Nên trước khi kể câu chuyện này cho khách, chị muốn mọi người là khách hàng đầu tiên của DUDU. Mỗi người sẽ nhận một bộ thử theo nền da của mình, được tư vấn và check-in ngày 14 như một bạn khách thật. Mình phải tự thấy “phòng thử” dễ chịu thế nào, rồi mới mời người khác vào.</p>
+<p>Thử nhỏ. Hiểu mình. Đẹp tự tin. Chị tin mình làm được.</p>
+<p class="sign">Chị Dung</p>
+</div>
+</section>
+
+<section id="noi-bo" class="sec chapter">
+<h2><span class="num">06</span>Buổi ra mắt nội bộ (60 phút)</h2>
+<p>Làm trước khi đổi banner và chạy chiến dịch bên ngoài (đề xuất trong tuần 12–16/10). Mục tiêu: mỗi người ra về nói lại được lời hứa bằng lời của mình.</p>
+<div class="tablewrap"><table><thead><tr><th>Phút</th><th>Hoạt động</th><th>Mục đích</th></tr></thead><tbody>
+<tr><td>0–5</td><td>Mỗi người đặt lên bàn 1 món skincare từng mua sai</td><td>Nhớ lại nỗi lo của chính khách hàng</td></tr>
+<tr><td>5–10</td><td>Chiếu video “Ngôi nhà có rất nhiều hạt” — bản kết đội ngũ</td><td>Cảm nhận câu chuyện trước khi phân tích</td></tr>
+<tr><td>10–20</td><td>Chị Dung đọc thư gửi đội ngũ; kể ý nghĩa 3 lớp của cái tên</td><td>Founder trao câu chuyện bằng giọng của mình</td></tr>
+<tr><td>20–35</td><td>Giới thiệu logo đu đủ, tagline, 4 giá trị → 4 hành vi mỗi ngày</td><td>Biến giá trị thành việc làm cụ thể</td></tr>
+<tr><td>35–50</td><td>Từng người gửi ảnh nền da, nhận bộ thử + Hộ chiếu làn da của mình</td><td>Đội ngũ trở thành khách hàng đầu tiên</td></tr>
+<tr><td>50–60</td><td>Mỗi người nói 1 câu: “Ở DUDU, mình hứa với khách rằng…”</td><td>Kiểm tra mọi người đã thấm lời hứa</td></tr>
+</tbody></table></div>
+
+<h3>4 giá trị thành 4 hành vi mỗi ngày</h3>
+<div class="tablewrap"><table><thead><tr><th>Giá trị</th><th>Hành vi</th><th>Ví dụ trong ngày</th></tr></thead><tbody>
+<tr><td>Khám phá</td><td>Mỗi tuần thử 1 sản phẩm mới và ghi phiếu kết quả</td><td>Thứ Sáu chia sẻ “tuần này mình thử gì” trong nhóm</td></tr>
+<tr><td>Cải tiến liên tục</td><td>Mỗi lỗi của khách thành 1 dòng cải tiến</td><td>Khách phàn nàn nhãn khó đọc → sửa mẫu nhãn trong tuần</td></tr>
+<tr><td>Minh bạch</td><td>Nói rõ hạn dùng, nguồn hàng, cái gì không hợp với ai</td><td>Ghi “không hợp da nhạy cảm” ngay trên mô tả</td></tr>
+<tr><td>Đặt mình là khách hàng</td><td>Trước khi gợi ý, tự hỏi “nếu là mình, mình có mua không?”</td><td>Khuyên bỏ bớt 1 bước thay vì thêm combo</td></tr>
+</tbody></table></div>
+
+<h3>Hai tuần sau buổi ra mắt</h3>
+<ul>
+<li class="todo"><span class="box" aria-hidden="true"></span>Ngày 3 và ngày 14: chị Dung hoặc Minh check-in từng thành viên như check-in khách thật.</li>
+<li class="todo"><span class="box" aria-hidden="true"></span>Gom phản hồi của đội ngũ về bộ thử, nhãn, tin nhắn → sửa trước khi mở cho khách.</li>
+<li class="todo"><span class="box" aria-hidden="true"></span>Chọn 2–3 trải nghiệm thật của nhân viên (có đồng ý) làm video đầu tiên của series “DUDU đã thử”.</li>
+</ul>
+</section>
+</main>
+
+<script>
+const SCENES = [
+ {t:"0–8", d:8, v:"Cận cảnh một ngăn tủ đầy chai lọ dùng dở; tay cô gái gạt sang một bên.", vo:"Trong tủ của bạn có bao nhiêu chai skincare dùng dở?", o:"Mua cả chai. Rồi bỏ xó."},
+ {t:"8–18", d:10, v:"Cô gái lướt điện thoại, nhìn giá 450.000đ, ngập ngừng trước nút “Mua”.", vo:"Mỗi món mới là một lần đánh cược vài trăm nghìn. Mua rồi mới biết không hợp. Hỏi thì không biết hỏi ai.", o:"Hợp hay không?"},
+ {t:"18–30", d:12, v:"Đèn bàn buổi tối, chị Dung đọc bảng thành phần, bôi thử lên mu bàn tay, ghi chép.", vo:"Có một người đã thử thay bạn suốt mười năm. Tuần nào cũng vài tiếng, đọc từng thành phần, tự dùng từng món mới.", o:"10 năm tự thử"},
+ {t:"30–42", d:12, v:"Chữ DUDU hiện ra; tách thành hai lớp: tên founder, rồi hình ngôi nhà ấm sáng đèn.", vo:"Chị gọi nơi ấy là DUDU. Cái tên của chính chị. Một ngôi nhà mà khách đến là đủ. Và khách hàng gọi bằng cái tên thân thương: Đu Đủ House.", o:"DUDU = Đu Đủ"},
+ {t:"42–54", d:12, v:"Dao bổ dọc quả đu đủ chín; máy quay tiến chậm vào lòng quả đầy hạt.", vo:"Bổ đôi một quả đu đủ, bạn thấy hàng trăm hạt nhỏ. Mỗi hạt là một khởi đầu. DUDU cũng vậy: hơn một nghìn bản thử nhỏ, để bạn bắt đầu từ cái nhỏ nhất.", o:"1.000+ bản thử"},
+ {t:"54–68", d:14, v:"Khay thử 5 ô màu mint; tiếng “tách” mở nắp; tem “DUDU đã thử” dán lên bản thử.", vo:"Đây là phòng thử của làn da. Thử nhỏ trước khi chọn lớn. Hợp thì mua cả chai. Chưa hợp thì bạn chỉ mất một bản thử.", o:"Phòng thử của làn da"},
+ {t:"68–82", d:14, v:"Màn hình chat: ảnh mặt mộc, Minh trả lời; lịch hiện ngày 3 và ngày 14.", vo:"Và bạn không thử một mình. Gửi ảnh nền da, DUDU xem cùng bạn. Bỏ bớt món này, thêm món kia, hai tuần sau mình xem lại.", o:"Không ai chăm da một mình"},
+ {t:"82–94", d:12, v:"Cô gái đứng trước kệ, tự tin chọn một chai; nụ cười nhẹ, ánh sáng ban ngày.", vo:"Đến một ngày, bạn tự chọn được. Vì bạn đã hiểu làn da của mình.", o:"Hiểu mình"},
+ {t:"94–105", d:11, v:"Logo ngôi nhà đu đủ hiện giữa nền kem; khay thử bên dưới.", vo:"DUDU HOUSE. Phòng thử của làn da. Thử nhỏ. Hiểu mình. Đẹp tự tin.", o:"Thử nhỏ. Hiểu mình. Đẹp tự tin.", end:"khach"},
+ {t:"94–105", d:11, v:"Cả đội DUDU đứng quanh bàn thử, mỗi người cầm Hộ chiếu làn da của mình; logo hiện lên.", vo:"Ngôi nhà ấy giữ được lời hứa nhờ những người ở trong nó. Là chị. Là em. Là chúng ta. DUDU HOUSE, phòng thử của làn da.", o:"Người giữ lời hứa là chúng ta", end:"doi-ngu"},
+];
+const tb = document.querySelector('#scriptTable tbody');
+tb.innerHTML = SCENES.map((s,i)=>`<tr><td style="white-space:nowrap">${s.t}s${s.end?`<br><small style="color:var(--muted);font-weight:500">${s.end==='khach'?'Kết bản khách hàng':'Kết bản đội ngũ'}</small>`:''}</td><td>${s.v}</td><td>${s.vo}</td><td>${s.o}</td></tr>`).join('');
+
+let ending = 'khach', idx = 0, timer = null, playing = false, elapsed = 0, tick = null;
+const seq = () => SCENES.filter(s => !s.end || s.end === ending);
+const total = () => seq().reduce((a,s)=>a+s.d,0);
+const fmt = s => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+const screen = document.getElementById('screen'), bar = document.getElementById('bar'), time = document.getElementById('time'), playBtn = document.getElementById('play'), endBtn = document.getElementById('ending');
+function show(i){
+  const s = seq()[i]; screen.classList.remove('anim'); void screen.offsetWidth;
+  screen.innerHTML = `<span class="scene-no">Cảnh ${i+1}/${seq().length} · ${s.t}s</span><p class="vo">${s.vo}</p><p class="visual">${s.v}</p><span class="ovl">${s.o}</span>`;
+  screen.classList.add('anim');
+}
+function update(){ bar.style.width = (elapsed/total()*100)+'%'; time.textContent = fmt(elapsed)+' / '+fmt(total()); }
+function stop(){ playing=false; clearTimeout(timer); clearInterval(tick); playBtn.textContent = idx>=seq().length-1 && elapsed>=total()-0.5 ? 'Xem lại' : 'Phát'; }
+function run(){
+  const s = seq()[idx]; show(idx);
+  const start = seq().slice(0,idx).reduce((a,x)=>a+x.d,0); elapsed = start; update();
+  clearInterval(tick); tick = setInterval(()=>{ elapsed=Math.min(elapsed+0.25,start+s.d); update(); },250);
+  timer = setTimeout(()=>{ if(idx < seq().length-1){ idx++; run(); } else { elapsed = total(); update(); stop(); } }, s.d*1000);
+}
+playBtn.addEventListener('click', ()=>{
+  if (playing) { stop(); return; }
+  if (elapsed >= total()-0.5) { idx = 0; elapsed = 0; }
+  playing = true; playBtn.textContent = 'Tạm dừng'; run();
+});
+endBtn.addEventListener('click', ()=>{
+  ending = ending==='khach' ? 'doi-ngu' : 'khach';
+  endBtn.textContent = ending==='khach' ? 'Đổi kết: đội ngũ' : 'Đổi kết: khách hàng';
+  stop(); idx = 0; elapsed = 0; show(0); update(); playBtn.textContent='Phát';
+});
+show(0); update();
+</script>
+<footer class="wrap foot"><p>Chuẩn bị cho DUDU HOUSE · 10/2026. Tài liệu làm việc — số liệu nội bộ từ nghiên cứu 09/2026; các mục đánh dấu "cần xác nhận" đang chờ chị Dung chốt.</p></footer></body></html>
